@@ -18,7 +18,7 @@ function miniMaxSum(arr) {
 
   // Remove max value from minArr and remove min value from maxArr
   minArr.splice(minArr.indexOf(max), 1);
-  maxArr.splice(minArr.indexOf(min), 1);
+  maxArr.splice(maxArr.indexOf(min), 1);
 
   // Sum both arrays
   const minSum = minArr.reduce((prev, cur) => prev + cur);
@@ -26,3 +26,5 @@ function miniMaxSum(arr) {
 
   console.log(`${minSum} ${maxSum}`);
 }
+
+miniMaxSum([769082435, 210437958, 673982045, 375809214, 380564127]);
